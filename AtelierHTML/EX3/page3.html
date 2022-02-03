@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<div><h1 style="text-align: center">Inscription en licence</h1></div>
+<form action="ecole.html" >
+    <fieldset>
+        <legend style="text-align: center">Informations personelles</legend>
+        <p style="text-align: center">
+            Votre nom :<input type="text" placeholder="Votre nom?" /> <br />
+        </p>
+        <p style="text-align: center">
+            Votre prénom :<input type="text" placeholder="Votre prenom?" /><br />
+        </p>
+        <p style="text-align: center">
+            Votre Age :<input type="number" placeholder="Votre age?" /><br />
+        </p>
+        <p style="text-align: center">
+            Date de naissance :<input
+                type="date"
+                placeholder="Date de naissance?"
+        /><br />
+        </p>
+        <p style="text-align: center">
+            Votre address :<textarea
+                rows="7"
+                cols="40"
+                placeholder="Votre address?"
+        ></textarea>
+        </p>
+        <p style="text-align: center">
+            Votre email:<input type="email" placeholder="votre email?" />
+        </p>
+        <p style="text-align: center">
+            Mot de passe :<input type="password" required /><br />
+        </p>
+        <p style="text-align: center">
+            Retapez votre mot de passe :<input type="password" required /><br />
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend style="text-align: center">
+            Gestions des groupes et des options
+        </legend>
+        <div style="text-align: center">
+            <br /><br />
+            Votre groupe :
+            <input type="radio" /> Groupe 1 <input type="radio" /> Groupe 2
+            <input type="radio" /> Groupe 3 <input type="radio" /> Groupe 4
+        </div>
+        <p style="text-align: center">
+            Numéro de carte d'étudiant :<input
+                type="text"
+                placeholder="Numéro de carte d'étudiant?"
+        />
+            <br />
+        </p>
+        <p style="text-align: center">
+            Url de votre site web:<input
+                type="url"
+                placeholder="url de votre site web?"
+        />
+        </p>
+        <div style="text-align: center">
+            Choisissez les options que vous désirez
+            <select>
+                <option>J2ee</option>
+                <option>Android</option>
+                <option>Net</option>
+                <option>HTML5</option>
+                <option>Flex</option>
+            </select>
+        </div>
+        <p style="text-align: center">
+            Mot secret:<input type="text" pattern="[I][N][S][A][T][0-9]{4}" /><br />
+        </p>
+    </fieldset>
+    <div style="text-align: center">
+        <br />
+
+        <input type="submit" value="valider"  >
+        <input type="reset" value="réinitialiser" />
+    </div>
+</form>
+</body>
+
+</html>
