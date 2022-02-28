@@ -1,0 +1,14 @@
+body{
+    background-color: lightblue;
+}
+#todoList{
+    padding-top: 50px ;
+}
+li{
+    margin: 7px;
+}
+h2{
+    position: center;
+    text-align: center;
+    color: gray;
+}
