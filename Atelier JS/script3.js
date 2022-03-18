@@ -21,10 +21,10 @@ function addTodoToList(){
     todoList.push(newTodo);
 }
 function constructListItems(listElement,list){
-    listElement.innerHTML="";
-    for(let i=0;i<list.length;i++)
+    if(list.length===1)
+        listElement.innerHTML='';
     listElement.innerHTML=listElement.innerHTML+`<li class="list-group-item">
-${list[i]}    <i class="bi bi-trash-fill"></i>
+${list[list.length-1]}    <i class="bi bi-trash-fill"></i>
 <i id="trash" class='fa fa-trash'></i>
 </li>`;
 }
@@ -34,10 +34,10 @@ function executeTodo(e){
     constructListItems(document.querySelector("ul"),todoList);
     document.querySelector("form").reset();
 }
-/*La ligne suivante n'est executee que on l'ecrit sur la console*/
-document.querySelector("button").addEventListener("click",executeTodo);
 
-//******************La fonction de supression
+
+
+
 const trash=document.querySelector("#trash");
 function deleteItem(trashItemElement){
     trashItemElement.parentNode.remove();
@@ -49,6 +49,8 @@ function executeDelete(e){
         e.target.parentNode.remove();
     }
 }
-/*la ligne suivante ne marche que sur la console*/
-document.querySelector("#todoList").addEventListener("click",executeDelete);
+let button =document.querySelector("button");
+let listElement =document.querySelector("#todoList");
+button.addEventListener("click",executeTodo);
+listElement.addEventListener("click",executeDelete);
 
